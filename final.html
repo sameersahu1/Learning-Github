@@ -1,0 +1,274 @@
+
+<!-- Lakshya Properties Premium Inquiry Form -->
+
+<section class="lakshya-form-section">
+  <div class="form-container">
+    
+    <div class="form-header">
+      <span class="badge">🏡 Lakshya Properties</span>
+      <h2>Find Your Dream Property</h2>
+      <p>
+        Looking to Buy, Sell, Rent, or Invest? Share your requirements and our
+        property experts will connect with you shortly.
+      </p>
+    </div>
+
+    <form
+      action="https://formspree.io/f/xrevdged"
+      method="POST"
+      class="property-form"
+    >
+      <div class="form-grid">
+
+        <div class="input-group">
+          <label>Full Name *</label>
+          <input type="text" name="Full Name" placeholder="Enter your full name" required />
+        </div>
+
+        <div class="input-group">
+          <label>Email Address *</label>
+          <input type="email" name="Email" placeholder="you@example.com" required />
+        </div>
+
+        <div class="input-group">
+          <label>Mobile Number *</label>
+          <input type="tel" name="Mobile Number" placeholder="+91 9876543210" required />
+        </div>
+
+        <div class="input-group">
+          <label>City</label>
+          <input type="text" name="City" placeholder="Noida, Greater Noida, Delhi..." />
+        </div>
+
+        <div class="input-group">
+          <label>Property Requirement *</label>
+          <select name="Requirement" required>
+            <option value="">Select Requirement</option>
+            <option>Buy Property</option>
+            <option>Sell Property</option>
+            <option>Rent Property</option>
+            <option>Lease Property</option>
+            <option>Investment</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label>Property Type *</label>
+          <select name="Property Type" required>
+            <option value="">Select Property Type</option>
+            <option>Apartment</option>
+            <option>Builder Floor</option>
+            <option>Villa</option>
+            <option>Plot</option>
+            <option>Commercial Office</option>
+            <option>Shop</option>
+            <option>Warehouse</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label>Preferred Location</label>
+          <input
+            type="text"
+            name="Preferred Location"
+            placeholder="Sector 150, Noida"
+          />
+        </div>
+
+        <div class="input-group">
+          <label>Budget</label>
+          <select name="Budget">
+            <option value="">Select Budget Range</option>
+            <option>Below ₹25 Lakh</option>
+            <option>₹25 Lakh - ₹50 Lakh</option>
+            <option>₹50 Lakh - ₹1 Crore</option>
+            <option>₹1 Crore - ₹2 Crore</option>
+            <option>₹2 Crore - ₹5 Crore</option>
+            <option>Above ₹5 Crore</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="input-group full-width">
+        <label>Message / Property Details</label>
+        <textarea
+          name="Message"
+          rows="5"
+          placeholder="Tell us about your property requirements..."
+        ></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">
+        Submit Inquiry →
+      </button>
+    </form>
+
+  </div>
+</section>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+.lakshya-form-section{
+  min-height:100vh;
+  padding:80px 20px;
+  background:
+    linear-gradient(rgba(8,15,35,.85),rgba(8,15,35,.92)),
+    url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.form-container{
+  width:100%;
+  max-width:1100px;
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(18px);
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:28px;
+  padding:50px;
+  box-shadow:0 20px 60px rgba(0,0,0,.35);
+}
+
+.form-header{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.badge{
+  display:inline-block;
+  background:linear-gradient(135deg,#f59e0b,#fbbf24);
+  color:#111827;
+  padding:8px 18px;
+  border-radius:50px;
+  font-size:14px;
+  font-weight:600;
+  margin-bottom:18px;
+}
+
+.form-header h2{
+  color:#fff;
+  font-size:42px;
+  font-weight:700;
+  margin-bottom:12px;
+}
+
+.form-header p{
+  color:#d1d5db;
+  max-width:700px;
+  margin:auto;
+  line-height:1.7;
+}
+
+.property-form{
+  display:flex;
+  flex-direction:column;
+  gap:25px;
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:22px;
+}
+
+.input-group{
+  display:flex;
+  flex-direction:column;
+}
+
+.input-group label{
+  color:#fff;
+  margin-bottom:8px;
+  font-size:14px;
+  font-weight:500;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea{
+  width:100%;
+  padding:15px 18px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.15);
+  background:rgba(255,255,255,.08);
+  color:#fff;
+  font-size:15px;
+  transition:.3s ease;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder{
+  color:#cbd5e1;
+}
+
+.input-group select{
+  color:#fff;
+}
+
+.input-group select option{
+  color:#111827;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus{
+  outline:none;
+  border-color:#f59e0b;
+  box-shadow:0 0 0 4px rgba(245,158,11,.2);
+  background:rgba(255,255,255,.12);
+}
+
+.full-width{
+  width:100%;
+}
+
+.submit-btn{
+  background:linear-gradient(135deg,#f59e0b,#fbbf24);
+  color:#111827;
+  border:none;
+  padding:16px;
+  border-radius:14px;
+  font-size:16px;
+  font-weight:700;
+  cursor:pointer;
+  transition:.3s ease;
+  box-shadow:0 10px 25px rgba(245,158,11,.35);
+}
+
+.submit-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 15px 35px rgba(245,158,11,.45);
+}
+
+@media(max-width:768px){
+
+  .form-container{
+    padding:30px 20px;
+  }
+
+  .form-header h2{
+    font-size:30px;
+  }
+
+  .form-grid{
+    grid-template-columns:1fr;
+  }
+
+  .lakshya-form-section{
+    padding:40px 15px;
+  }
+}
+</style>
+

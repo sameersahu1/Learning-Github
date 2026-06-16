@@ -1,0 +1,203 @@
+<!-- LAKSHYA PROPERTIES CONTACT FORM -->
+
+<section class="contact-section">
+  <div class="contact-container">
+    <div class="contact-header">
+      <h2>Get Your Dream Property</h2>
+      <p>
+        Looking to Buy, Sell, Rent, or Invest? Fill out the form below and
+        our team will contact you shortly.
+      </p>
+    </div>
+
+```
+<form
+  action="https://formspree.io/f/xrevdged"
+  method="POST"
+  class="property-form"
+>
+  <div class="form-grid">
+    <div class="input-group">
+      <label>Full Name *</label>
+      <input type="text" name="Full Name" required />
+    </div>
+
+    <div class="input-group">
+      <label>Email Address *</label>
+      <input type="email" name="Email" required />
+    </div>
+
+    <div class="input-group">
+      <label>Mobile Number *</label>
+      <input type="tel" name="Mobile Number" required />
+    </div>
+
+    <div class="input-group">
+      <label>City</label>
+      <input type="text" name="City" />
+    </div>
+
+    <div class="input-group">
+      <label>Property Requirement *</label>
+      <select name="Requirement" required>
+        <option value="">Select Requirement</option>
+        <option>Buy Property</option>
+        <option>Sell Property</option>
+        <option>Rent Property</option>
+        <option>Lease Property</option>
+        <option>Investment</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label>Property Type *</label>
+      <select name="Property Type" required>
+        <option value="">Select Property Type</option>
+        <option>Apartment</option>
+        <option>Builder Floor</option>
+        <option>Villa</option>
+        <option>Plot</option>
+        <option>Commercial Office</option>
+        <option>Shop</option>
+        <option>Warehouse</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label>Preferred Location</label>
+      <input
+        type="text"
+        name="Preferred Location"
+        placeholder="Sector 93A, Noida"
+      />
+    </div>
+
+    <div class="input-group">
+      <label>Budget</label>
+      <input
+        type="text"
+        name="Budget"
+        placeholder="₹50 Lakh - ₹1 Crore"
+      />
+    </div>
+  </div>
+
+  <div class="input-group">
+    <label>Message / Property Details</label>
+    <textarea
+      name="Message"
+      rows="5"
+      placeholder="Tell us about your property requirements..."
+    ></textarea>
+  </div>
+
+  <button type="submit" class="submit-btn">
+    Send Inquiry
+  </button>
+</form>
+```
+
+  </div>
+</section>
+
+<style>
+.contact-section {
+  padding: 80px 20px;
+  background: #f8fafc;
+}
+
+.contact-container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-header h2 {
+  font-size: 2rem;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.contact-header p {
+  color: #64748b;
+}
+
+.property-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37,99,235,0.15);
+}
+
+.submit-btn {
+  background: linear-gradient(135deg,#2563eb,#1d4ed8);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 25px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-header h2 {
+    font-size: 1.7rem;
+  }
+}
+</style>
